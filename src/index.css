@@ -25,4 +25,44 @@ body {
 body {
     background-color: var(--clr-primary);
     color: var(--clr-txt);
+
+    /* TODO: utility class */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section {
+    border: 3px solid black;
+    background-color: var(--clr-secondary);
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.buttons button {
+    font-size: larger;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: var(--clr-primary);
+    color: var(--clr-txt);
 }
