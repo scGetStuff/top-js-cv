@@ -9,16 +9,7 @@ export class Section extends React.Component {
         return (
             <div className='section'>
                 <h2>{this.props.title}</h2>
-                <form>
-                    <input type='text'></input>
-                    <input type='text'></input>
-                    <input type='text'></input>
-                </form>
-
-                <div className='buttons'>
-                    <button type='button'>Edit</button>
-                    <button type='button'>Submit</button>
-                </div>
+                {this.props.children}
             </div>
         );
     }
