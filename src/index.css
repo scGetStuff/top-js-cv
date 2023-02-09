@@ -25,30 +25,9 @@ body {
 body {
     background-color: var(--clr-primary);
     color: var(--clr-txt);
-
-    /* TODO: utility class */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 1rem;
-}
-
-input[type='text'] {
-    margin-left: 0.5rem;
-}
-
-.section {
-    border: 3px solid black;
-    background-color: var(--clr-secondary);
-    padding: 1rem;
-
+.fcol {
     display: flex;
     flex-direction: column;
     align-items: center;

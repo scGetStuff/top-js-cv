@@ -1,0 +1,6 @@
+.section {
+    composes: fcol from global;
+    border: 3px solid black;
+    background-color: var(--clr-secondary);
+    padding: 1rem;
+}

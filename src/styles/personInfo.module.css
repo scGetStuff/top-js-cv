@@ -1,0 +1,20 @@
+/* 
+TODO: this does not work becaues you can't extend global
+so, stuck duplicating css; this makes me like modules less
+*/
+.XformX {
+    composes: fcol from global;
+    align-items: flex-end;
+}
+
+.fcol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form {
+    composes: fcol;
+    align-items: flex-end;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { InputText } from './InputText';
+import styles from '../styles/personInfo.module.css';
 
 export class PersonInfo extends React.Component {
     constructor(props) {
@@ -26,7 +27,7 @@ export class PersonInfo extends React.Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
+            <form className={styles.form} onSubmit={this.handleSubmit}>
                 <InputText
                     name='name'
                     value={this.state.name}
