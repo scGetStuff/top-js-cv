@@ -1,16 +1,14 @@
 import React from 'react';
 import { InputText } from './InputText';
-import styles from '../styles/personInfo.module.css';
+import { InputInteger } from './InputInteger';
+import styles from '../styles/educationInfo.module.css';
 
-export class PersonInfo extends React.Component {
+export class EducationInfo extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = { name: '', email: '', phone: '' };
+        this.state = { name: '', degree: '', start: '', end: '' };
 
-        // TODO: not sure if this is a good approach
-        // in general I hate bind(this), but this is what was in the docs
-        // and I do like normal function over a property set to an arrow function to avoid 'losing this'
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -28,31 +26,39 @@ export class PersonInfo extends React.Component {
     render() {
         return (
             <form
-                className={styles.form}
+                className={styles.fcol_end}
                 onSubmit={this.handleSubmit}
                 autoComplete='off'
             >
                 <InputText
                     name='name'
                     value={this.state.name}
-                    label='Name'
+                    label='School'
                     handleChange={this.handleChange}
                 />
 
                 <InputText
-                    name='email'
+                    name='degree'
                     value={this.state.email}
-                    label='Email'
+                    label='Degree'
                     handleChange={this.handleChange}
                 />
 
-                <InputText
-                    name='phone'
-                    value={this.state.phone}
-                    label='Phone'
-                    handleChange={this.handleChange}
-                />
+                <div className={styles.fcol_end}>
+                    <InputInteger
+                        name='start'
+                        value={this.state.phone}
+                        label='Start year'
+                        handleChange={this.handleChange}
+                    />
 
+                    <InputInteger
+                        name='end'
+                        value={this.state.phone}
+                        label='End year'
+                        handleChange={this.handleChange}
+                    />
+                </div>
                 <div className='buttons'>
                     <button type='button' value='Edit'>
                         Edit
