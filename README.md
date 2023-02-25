@@ -10,6 +10,12 @@ The Odin Project, Full Stack JavaScript Path, JavaScript, React JS, Project: CV 
     - I want self contained components, but this is not generic code that is used outside the project.
     - so do I want to reference global style in my components or not?
     - I think I decided to make util.module.css to avoid any global styles
+- webpack.config.js - turn off size warning
+    ```js
+        performance: {
+            hints: false,
+        },
+    ```
 
 # TODO:
 - add file for utility styles used across components; to avoid global
