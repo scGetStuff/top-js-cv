@@ -1,20 +1,10 @@
-/* 
-TODO: duplicate crap for now, still working out plan
-*/
-.fcol {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-.fcol_end {
-    composes: fcol;
+.form {
+    composes: fcol from "./util.module.css";
     align-items: flex-end;
 }
 
 .years {
-    composes: fcol;
+    composes: fcol from "./util.module.css";
     align-items: flex-end;
-    align-self: flex-start;
+    /* align-self: flex-start; */
 }

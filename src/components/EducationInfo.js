@@ -26,7 +26,7 @@ export class EducationInfo extends React.Component {
     render() {
         return (
             <form
-                className={styles.fcol_end}
+                className={styles.form}
                 onSubmit={this.handleSubmit}
                 autoComplete='off'
             >
@@ -44,7 +44,7 @@ export class EducationInfo extends React.Component {
                     handleChange={this.handleChange}
                 />
 
-                <div className={styles.fcol_end}>
+                <div className={styles.years}>
                     <InputInteger
                         name='start'
                         value={this.state.phone}

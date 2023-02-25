@@ -1,0 +1,14 @@
+/* 
+this exists because you can't extend global; any props you try to change don't work
+*/
+
+.XfcolX {
+    composes: fcol from global;
+}
+
+.fcol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}

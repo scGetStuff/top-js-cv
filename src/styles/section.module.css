@@ -1,5 +1,5 @@
 .section {
-    composes: fcol from global;
+    composes: fcol from "./util.module.css";
     border: 3px solid black;
     background-color: var(--clr-secondary);
     padding: 1rem;
