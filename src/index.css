@@ -34,6 +34,9 @@ body {
     gap: 1rem;
 }
 
+/* 
+TODO: probably move into a seperate module once I figure out what I'm doing with the buttons
+*/
 .buttons {
     align-self: center;
 

@@ -1,4 +1,3 @@
 .form {
-    composes: fcol from "./util.module.css";
-    align-items: flex-end;
+    composes: fcol fend from "./util.module.css";
 }

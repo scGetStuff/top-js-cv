@@ -3,13 +3,10 @@ The Odin Project, Full Stack JavaScript Path, JavaScript, React JS, Project: CV 
 
 # Notes
 - Not using CRA
-- I'm going for composition of self contained components, so I end up with a bunch of wrappers, feeling conflicted, every tag used in a component is already a wrapper of an HTML element.
-- Also, issues using CSS Modules, Styled Components are covered later in the course
-    - you can't extend global styles with `composes:`, so I have duplicate css
-    - I think that is what you end up with if using css in JS, so do I care?
-    - I want self contained components, but this is not generic code that is used outside the project.
-    - so do I want to reference global style in my components or not?
-    - I think I decided to make util.module.css to avoid any global styles
+- I'm going for self contained components, so I end up with a bunch of wrappers, feeling conflicted, every tag used in a component is already a wrapper of an HTML element.
+- Using CSS Modules
+    - Styled Components are covered later in the course
+    - you can't extend global styles with `composes:`, property overrides don't work, so global stuff is in util.module.css
 - webpack.config.js - turn off size warning
     ```js
         performance: {
@@ -18,7 +15,6 @@ The Odin Project, Full Stack JavaScript Path, JavaScript, React JS, Project: CV 
     ```
 
 # TODO:
-- add file for utility styles used across components; to avoid global
 - default page to edit, add dummy data button to set a bunch of default crap for testing
 - Edit button should toggle read only view
     - look into https://reactjs.org/docs/context.html for global flag

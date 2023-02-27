@@ -1,4 +1,4 @@
 .number {
-    margin-left: 0.5rem;
+    composes: pL from "./util.module.css";
     width: 3.5rem;
 }

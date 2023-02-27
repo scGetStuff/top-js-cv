@@ -1,7 +1,3 @@
-/* 
-TODO: this probably should be done for <input> in the global style, but 
-I want the components to all be self contained, this gives me the structure to customize later
-*/
 .text {
-    margin-left: 0.5rem;
+    composes: pL from "./util.module.css";
 }
