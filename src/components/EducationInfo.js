@@ -24,6 +24,7 @@ export class EducationInfo extends React.Component {
     }
 
     render() {
+        const year = new Date().getFullYear();
         return (
             <form
                 className={styles.form}
@@ -39,7 +40,7 @@ export class EducationInfo extends React.Component {
 
                 <InputText
                     name='degree'
-                    value={this.state.email}
+                    value={this.state.degree}
                     label='Degree'
                     handleChange={this.handleChange}
                 />
@@ -47,16 +48,20 @@ export class EducationInfo extends React.Component {
                 <div className={styles.years}>
                     <InputInteger
                         name='start'
-                        value={this.state.phone}
+                        value={this.state.start}
                         label='Start year'
                         handleChange={this.handleChange}
+                        min='1950'
+                        max={year}
                     />
 
                     <InputInteger
                         name='end'
-                        value={this.state.phone}
+                        value={this.state.end}
                         label='End year'
                         handleChange={this.handleChange}
+                        min='1950'
+                        max={year}
                     />
                 </div>
                 <div className='buttons'>

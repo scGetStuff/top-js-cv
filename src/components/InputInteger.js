@@ -16,8 +16,8 @@ export class InputInteger extends React.Component {
                     name={this.props.name}
                     value={this.props.value}
                     onChange={this.props.handleChange}
-                    min='1900'
-                    max={new Date().getFullYear()}
+                    min={this.props.min}
+                    max={this.props.max}
                 />
             </label>
         );
